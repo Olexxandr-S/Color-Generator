@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SingleColor from "./SingleColor";
+import logo from "./logo.png";
 
 import Values from "values.js";
 
@@ -22,7 +23,9 @@ function App() {
   return (
     <>
       <section className="container">
-        <h3>color generator</h3>
+        <img src={logo} alt="logo" />
+        <h3>Color generator</h3>
+
         <form onSubmit={handleSubmit}>
           <input
             type="text"
